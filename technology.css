@@ -1,0 +1,97 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Barlow';
+}
+html,body{
+  min-height:100%;
+  width:100%;
+}
+.container{
+  padding:2em;
+  display:grid;
+  gap:2em;
+}
+body{
+  background:url('assets/technology/background-technology-mobile.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:white;
+}
+.header{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+/*   padding: 1em; */
+}
+.heading{
+  padding:2em;
+  color:rgb(210,216,249);
+}
+#description{
+  color:rgb(210,216,249);
+}
+#main-heading{
+  font-family:'Bellefair';
+}
+.flex-flow{
+  display: flex;
+  flex-direction:column;
+  gap:1em;
+  padding:2em;
+}
+.numbers{
+  display:flex;
+  gap:2em;
+  justify-content: center;
+  align-items: center;
+}
+.numbers > *{
+  background-color: black;
+  color:white;
+  border-radius:50%;
+  padding:1em;
+  aspect-ratio: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.data{
+  display:flex;
+  flex-direction:column;
+  gap:1em;
+}
+.image > img{
+  max-width:100%;
+}
+.image{
+  padding:2em;
+}
+.grid-container{
+  display:grid;
+  gap:2em;
+}
+@media (min-width:700px){
+  .grid-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  body{
+    background:url('assets/technology/background-technology-desktop.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+/*   .image > img{
+    content:url('assets/technology/image-launch-vehicle-portrait.jpg');
+  } */
+  .flex-flow{
+    flex-direction:row;
+    gap:2em;
+  }
+  .numbers{
+    flex-direction:column;
+  }
+  .data{
+    justify-content: center;
+    align-items: center;
+  }
+}
+

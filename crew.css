@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Barlow';
+}
+html,body{
+  min-height:100%;
+  width:100%
+}
+body{
+  background:url('assets/crew/background-crew-mobile.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:white;
+}
+img{
+  width:100%;
+}
+.header{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.heading{
+  color:rgb(210,216,249);
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  gap:2em;
+  padding:2em;
+}
+.grid-container{
+  display:grid;
+  gap:2em;
+}
+ .main{
+      display:flex;
+      flex-direction:column;
+   align-content: center;
+     gap:1em; 
+   padding:1em;
+  } 
+/* .main-header{
+    padding:1em;
+  } */
+.dots{
+  display:flex;
+  gap:2em;
+  flex-wrap:wrap;
+}
+.dots > * {
+  padding:0.5em;
+  border-radius:50%;
+  background:darkgray;
+  align-self: center;
+}
+.dots > *:hover{
+  background:white;
+  cursor: pointer;
+}
+.main > #post,#name{
+  text-transform:uppercase;
+}
+#post{
+  color:gray;
+  text-transform:uppercase;
+}
+#kaam{
+  color:darkgray;
+}
+#name{
+  font-family:'Bellefair';
+}
+@media (min-width:700px){
+  .grid-container{
+    grid-template-columns: repeat(2,1fr);
+    gap:2em;
+  }
+  body{
+  background:url('assets/crew/background-crew-desktop.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+  .main{
+    display:grid;
+  }
+  
+}
